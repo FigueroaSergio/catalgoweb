@@ -30,10 +30,11 @@ public class User implements Serializable  {
     private Long id;
     @Column(name="EMAIL",length=50,  unique=true ,nullable=false)
     private String email;
-    @Column(name="NAME",length=80,nullable=false)
-    private String name;
+    
     @Column(name="PASSWORD",length=50,nullable=false)
     private String password;
+    @Column(name="NAME",length=80,nullable=false)
+    private String name;
 
     public Long getId() {
         return id;
